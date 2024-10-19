@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\repos\\YC_Project\\YC_Project\\YC_Project.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\YC_Project\\YC_Project\\YC_Project\\YC_Project\\YC_Project.csproj",
       "projectName": "YC_Project",
-      "projectPath": "C:\\Users\\user\\source\\repos\\YC_Project\\YC_Project\\YC_Project.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\YC_Project\\YC_Project\\YC_Project\\YC_Project\\YC_Project.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\repos\\YC_Project\\YC_Project\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\YC_Project\\YC_Project\\YC_Project\\YC_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
