@@ -9,6 +9,17 @@ namespace YC_Project
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+
+
+            // 配置 Session
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(1);   // 設定 Session 過期時間
+                options.Cookie.HttpOnly = true;                  // 設定 cookie 只能通過伺服器存取
+                options.Cookie.IsEssential = true;               // 設置 cookie 為必要，避免 EU cookie 政策的問題
+            });
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -24,11 +35,14 @@ namespace YC_Project
 
             app.UseRouting();
 
+            // 啟用Session
+            app.UseSession();
+
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
             app.Run();
         }

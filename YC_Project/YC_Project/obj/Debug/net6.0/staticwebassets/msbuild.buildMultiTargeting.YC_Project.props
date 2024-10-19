@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\YC_Project.props" />
+</Project>

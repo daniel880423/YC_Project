@@ -15,6 +15,7 @@ namespace YC_Project.Controllers
 
         public IActionResult Index()
         {
+            var userName = HttpContext.Session.GetString("UserName");
             return View();
         }
 
