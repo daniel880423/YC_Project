@@ -26,8 +26,5 @@ Shmoo Subtest Item，換算後光是ATPG_Phase_A測試項就要拆成60 * 12 = 7
 Function icon中各個Entry Pattern獨立執行所要求的ShmooParameter。 反之，則與平常掃Shmoo的狀況相同，一次對所有Pattern執行所要求的Shmoo Parameter。 b. 在有勾選ByPattern Shmoo的情況下，需指定欲要針對哪個Function icon執行By Pattern Run Shmoo的動作。 c. ByPattern Run 
 Shmoo前可選擇設定每次必然需要被執行的Header Pattern / Enter Mode Pattern。 d.選定需要被執行的多個Shmoo Parameter。 7. 下圖為設定完 
 成後的畫面 (images/Output.015.png)  |
-|  5. conclusion  |  (images/Output.016.png) 1. 上圖為 By Pattern Run Multiple Shmoo
-Parameter的結果，說明如下： Pattern的數量：13 Shmoo Parameter的數量：5 2. By Pattern Run
-Multiple Shmoo Parameter的結果， 組合數量 = 13 * 5 = 65組 3. 當 Pattern * Shmoo
-Parameter的組合數量越大時，By Pattern Run Multiple Shmoo
-Parameter功能可節省大量的編輯時間，並且降低編輯過程可能出現的失誤。  |
+|  5. conclusion  |  (images/Output.016.png) 1. 上圖為 By Pattern Run Multiple ShmooParameter的結果，說明如下： Pattern的數量：13 Shmoo Parameter的數量：5 2. By Pattern RunMultiple Shmoo Parameter的結果， 組合數量 = 13 * 5 = 65組 3. 當 Pattern * ShmooParameter的
+組合數量越大時，By Pattern Run Multiple ShmooParameter功能可節省大量的編輯時間，並且降低編輯過程可能出現的失誤。  |
