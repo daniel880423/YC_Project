@@ -9,6 +9,7 @@
 |  異常判定  |  軟體  |
 |  Keywords  |  shmoo, by pattern  |
 |  Application  |  WIFI6  |
+
 |   ANALYSIS AND SOLUTION   |  Describe  |
 |  ---------  |  ---------  |
 |  1. Current State  |  1. 客戶現階段的shmoo工程需求如下： a. By pattern收集shmoo，例如ATPG_Phase_A的body pattern有60支，就必須要收
