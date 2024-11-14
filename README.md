@@ -4,7 +4,7 @@
 |  部門/Owner  |  7220/陳昱全  |
 |  Customer  |  MTK  |
 |  CP/FT  |  CP  |
-|  Device Issue  |  MT7923 Run Multi Shmoo  |
+|  Device Issue  |  MT7923 Run Multi Shmoo  | 
 |  平台  |  E320BD-CH  |
 |  異常判定  |  軟體  |
 |  Keywords  |  shmoo, by pattern  |
