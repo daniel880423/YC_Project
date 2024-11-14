@@ -44,6 +44,8 @@
 |  5. Solution  |   當產品有一推多組MOS Relay時，需要將供應電流開大，以防止當Contact不佳時，負載電流變化導致MOS Relay切換異常  |
 
 
+
+
 |   ISSUE’S GENERAL INFORMATION   |  Describe  |
 |  ---------  |  ---------  |
 |  Issue Date  |  2024/07/10  |
