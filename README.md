@@ -12,10 +12,8 @@ pattern有60支，就必須要收集60組shmoo結果。
 Subtest Item，換算後光是ATPG_Phase_A測試項就要拆成60 * 12 =
 720個shmoo測試項，但ATPG不會只有Phase_A，且還有許多不同ATPG
 Type、其他測試項也有相同需求。
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.002.png)
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.003.png)
 2. 客戶提供的Framework內容如下：
@@ -31,18 +29,14 @@ Flow就是一個大工程，非常容易出錯。
  與軟體部提出新的SHMOO測試項測試架構
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.005.png)
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.006.png)
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.007.png)
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.008.png)
   ## 4. Solution
  Ver_402之後新版UI新增By Pattern run multiple Shmoo Parameter功能，操作方式介紹如下：1.在UI的Test Programming介面點擊滑鼠右鍵，選擇Subtest Set Shmoo。
-
 ![圖片](images/MTK_MT7923__Run
 Multi Shmoo ISSUE_20230313.009.png)
 2. 建立Shmoo Parameter
@@ -56,7 +50,6 @@ Parameter
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.012.png)
  5.點選紅框中的Setting
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.013.png)
-
 
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.014.png)
 6.上圖中的設定步驟如下所述a. 在有勾選By Pattern Shmoo的情況下，UI將會針對指定Function icon中各個Entry
