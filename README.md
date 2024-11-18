@@ -13,46 +13,27 @@ Subtest Item，換算後光是ATPG_Phase_A測試項就要拆成60 * 12 =
 720個shmoo測試項，但ATPG不會只有Phase_A，且還有許多不同ATPG
 Type、其他測試項也有相同需求。
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.002.png)
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.003.png)
-2. 客戶提供的Framework內容如下：
-![圖片](images/MTK_MT7923__Run Multi
-Shmoo ISSUE_20230313.004.png)
-3.shmoo工程中的pattetn不見得會是同一版，shmoo參數也會有調整的可能性，若一旦改版就算有Framework要再重建的花費時間也是滿大的，因為編輯出來的項目還是必須要再後製微調，且仍有出錯的可能性。
+ISSUE_20230313.002.png)![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.003.png)2. 客戶提供的Framework內容如下：![圖片](images/MTK_MT7923__Run Multi
+Shmoo ISSUE_20230313.004.png)3.shmoo工程中的pattetn不見得會是同一版，shmoo參數也會有調整的可能性，若一旦改版就算有Framework要再重建的花費時間也是滿大的，因為編輯出來的項目還是必須要再後製微調，且仍有出錯的可能性。
 4. shmoo測試項過多，尋找單一項目時不容易也不直覺，Flow編輯上也相對麻煩許多。
   ## 2. Defect/Risk Summary
  1. Shmoo Subtest Item數量過多，少則幾百個測試項，多則幾千個測試項，項目過冗導致指定項目尋找不易，光是編輯Test
 Flow就是一個大工程，非常容易出錯。
  2. 無論是透過UI或是.sub檔新增/變更Shmoo Subtest Item，所需要花費的時間是相當大量的。
   ## 3. Processing
- 與軟體部提出新的SHMOO測試項測試架構
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.005.png)
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.006.png)
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.007.png)
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.008.png)
-  ## 4. Solution
+ 與軟體部提出新的SHMOO測試項測試架構![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.005.png)![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.006.png)![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.007.png)![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.008.png)  ## 4. Solution
  Ver_402之後新版UI新增By Pattern run multiple Shmoo Parameter功能，操作方式介紹如下：1.在UI的Test Programming介面點擊滑鼠右鍵，選擇Subtest Set Shmoo。
 ![圖片](images/MTK_MT7923__Run
-Multi Shmoo ISSUE_20230313.009.png)
-2. 建立Shmoo Parameter
-Set
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.010.png)
-3.完成該測試項的所有Shmoo Parameter Set需求
-![圖片](images/MTK_MT7923__Run Multi Shmoo
-ISSUE_20230313.011.png)
- 4. 勾選Execute multiple Shmoo
-Parameter
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.012.png)
- 5.點選紅框中的Setting
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.013.png)
-
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.014.png)
-6.上圖中的設定步驟如下所述a. 在有勾選By Pattern Shmoo的情況下，UI將會針對指定Function icon中各個Entry
+Multi Shmoo ISSUE_20230313.009.png)2. 建立Shmoo Parameter
+Set![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.010.png)3.完成該測試項的所有Shmoo Parameter Set需求![圖片](images/MTK_MT7923__Run Multi Shmoo
+ISSUE_20230313.011.png) 4. 勾選Execute multiple Shmoo
+Parameter![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.012.png) 5.點選紅框中的Setting![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.013.png)
+![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.014.png)6.上圖中的設定步驟如下所述a. 在有勾選By Pattern Shmoo的情況下，UI將會針對指定Function icon中各個Entry
 Pattern獨立執行所要求的Shmoo Parameter。
 反之，則與平常掃Shmoo的狀況相同，一次對所有Pattern執行所要求的Shmoo
 Parameter。
@@ -61,12 +42,8 @@ Shmoo的動作。
  c. By Pattern Run Shmoo前可選擇設定每次必然需要被執行的Header Pattern / Enter Mode
 Pattern。
  d. 選定需要被執行的多個Shmoo Parameter。
- 7.下圖為設定完成後的畫面
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.015.png)
-  ## 5. conclusion
- 
-![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.016.png)
- 1. 上圖為 By
+ 7.下圖為設定完成後的畫面![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.015.png)  ## 5. conclusion
+ ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.016.png) 1. 上圖為 By
 Pattern Run Multiple Shmoo Parameter的結果，說明如下：Pattern的數量：13Shmoo Parameter的數量：5
 2. By Pattern Run Multiple Shmoo Parameter的結果，組合數量 = 13 * 5 = 65組 3. 當
 Pattern * Shmoo Parameter的組合數量越大時，By Pattern Run Multiple Shmoo
