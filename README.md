@@ -4,7 +4,8 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
 | 2023/03/13 |7220/陳昱全 |MTK |CP |MT7923 Run Multi Shmoo |E320BD-CH |軟體 |shmoo, by pattern |WIFI6 |
 # ANALYSIS AND SOLUTION
 ## 1. Current State
- 1. 客戶現階段的shmoo工程需求如下： a. By pattern收集shmoo，例如ATPG_Phase_A的body
+ 1. 客戶現階段的shmoo工程需求如下：
+ a. By pattern收集shmoo，例如ATPG_Phase_A的body
 pattern有60支，就必須要收集60組shmoo結果。
  b.
 每支pattern各別都有多個shmoo參數設定需要收集，mail中的單支pattern就有12個shmoo參數。
@@ -19,6 +20,7 @@ ISSUE_20230313.002.png)
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.003.png)
 2. 客戶提供的Framework內容如下：
+
 ![圖片](images/MTK_MT7923__Run Multi
 Shmoo ISSUE_20230313.004.png)
 3.shmoo工程中的pattetn不見得會是同一版，shmoo參數也會有調整的可能性，若一旦改版就算有Framework要再重建的花費時間也是滿大的，因為編輯出來的項目還是必須要再後製微調，且仍有出錯的可能性。
@@ -41,7 +43,8 @@ ISSUE_20230313.007.png)
 ![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.008.png)
   ## 4. Solution
- Ver_402之後新版UI新增By Pattern run multiple Shmoo Parameter功能，操作方式介紹如下：1.在UI的Test Programming介面點擊滑鼠右鍵，選擇Subtest Set Shmoo。
+ Ver_402之後新版UI新增By Pattern run multiple Shmoo Parameter功能，操作方式介紹如下：
+1.在UI的Test Programming介面點擊滑鼠右鍵，選擇Subtest Set Shmoo。
 
 ![圖片](images/MTK_MT7923__Run
 Multi Shmoo ISSUE_20230313.009.png)
@@ -74,7 +77,10 @@ Pattern。
  
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.016.png)
  1. 上圖為 By
-Pattern Run Multiple Shmoo Parameter的結果，說明如下：Pattern的數量：13Shmoo Parameter的數量：5
+Pattern Run Multiple Shmoo Parameter的結果，說明如下：
+Pattern的數量：
+13Shmoo Parameter的數量：
+5
 2. By Pattern Run Multiple Shmoo Parameter的結果，組合數量 = 13 * 5 = 65組 3. 當
 Pattern * Shmoo Parameter的組合數量越大時，By Pattern Run Multiple Shmoo
 Parameter功能可節省大量的編輯時間，並且降低編輯過程可能出現的失誤。
