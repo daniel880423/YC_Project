@@ -16,7 +16,6 @@ Type、其他測試項也有相同需求。
 ISSUE_20230313.002.png)![圖片](images/MTK_MT7923__Run Multi Shmoo
 ISSUE_20230313.003.png)2. 客戶提供的Framework內容如下：![圖片](images/MTK_MT7923__Run Multi
 Shmoo ISSUE_20230313.004.png)3.shmoo工程中的pattetn不見得會是同一版，shmoo參數也會有調整的可能性，若一旦改版就算有Framework要再重建的花費時間也是滿大的，因為編輯出來的項目還是必須要再後製微調，且仍有出錯的可能性。
-
 4. shmoo測試項過多，尋找單一項目時不容易也不直覺，Flow編輯上也相對麻煩許多。
   ## 2. Defect/Risk Summary
  1. Shmoo Subtest Item數量過多，少則幾百個測試項，多則幾千個測試項，項目過冗導致指定項目尋找不易，光是編輯Test
