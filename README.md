@@ -9,15 +9,12 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
    b.每支pattern各別都有多個shmoo參數設定需要收集，mail中的單支pattern就有12個shmoo參數。
    c. 若每個條件都要建立一項ShmooSubtest Item，換算後光是ATPG_Phase_A測試項就要拆成60 * 12 =720個shmoo測試項，但ATPG不會只有Phase_A，且還有許多不同ATPGType、其他測試項也有相同需求。
 
-
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.002.png)
-
 
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.003.png)
 
 2.  客戶提供的Framework內容如下：
-
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.004.png)
 
@@ -32,13 +29,10 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.005.png)
 
 
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.006.png)
 
 
-
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.007.png)
-
 
 
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.008.png)
@@ -46,7 +40,6 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
 ## 4. Solution
 * Ver_402之後新版UI新增By Pattern run multiple Shmoo Parameter功能，操作方式介紹如下：
    1. 在UI的Test Programming介面點擊滑鼠右鍵，選擇Subtest Set Shmoo。
-
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.009.png)
 
@@ -67,20 +60,18 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.013.png)
 
 
-
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.014.png)
 
-6. 上圖中的設定步驟如下所述：
+   6. 上圖中的設定步驟如下所述：
       a. 在有勾選By Pattern Shmoo的情況下，UI將會針對指定Function icon中各個EntryPattern獨立執行所要求的Shmoo Parameter，反之，則與平常掃Shmoo的狀況相同，一次對所有Pattern執行所要求的ShmooParameter。
       b. 在有勾選By Pattern Shmoo的情況下，需指定欲要針對哪個Function icon執行By Pattern RunShmoo的動作。
       c. By Pattern Run Shmoo前可選擇設定每次必然需要被執行的Header Pattern / Enter ModePattern。
       d. 選定需要被執行的多個Shmoo Parameter。
-      7. 下圖為設定完成後的畫面
+   7. 下圖為設定完成後的畫面
 
-      ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.015.png)
+   ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.015.png)
 
 ## 5. conclusion
-
 
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.016.png)
 
