@@ -5,12 +5,13 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
 # ANALYSIS AND SOLUTION
 ## 1. Current State
 1.  客戶現階段的shmoo工程需求如下：
-    a. By pattern收集shmoo，例如ATPG_Phase_A的bodypattern有60支，就必須要收集60組shmoo結果。
+   a. By pattern收集shmoo，例如ATPG_Phase_A的bodypattern有60支，就必須要收集60組shmoo結果。
    b.每支pattern各別都有多個shmoo參數設定需要收集，mail中的單支pattern就有12個shmoo參數。
    c. 若每個條件都要建立一項ShmooSubtest Item，換算後光是ATPG_Phase_A測試項就要拆成60 * 12 =720個shmoo測試項，但ATPG不會只有Phase_A，且還有許多不同ATPGType、其他測試項也有相同需求。
 
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.002.png)
+
 
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.003.png)
@@ -31,10 +32,13 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.005.png)
 
 
+
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.006.png)
 
 
+
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.007.png)
+
 
 
 ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.008.png)
@@ -61,6 +65,7 @@ Issue Date |部門/Owner |Customer |CP/FT |Device Issue |平台 |異常判定 |K
    5. 點選紅框中的Setting
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.013.png)
+
 
 
    ![圖片](images/MTK_MT7923__Run Multi Shmoo ISSUE_20230313.014.png)
